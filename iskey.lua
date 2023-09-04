@@ -44,7 +44,7 @@ UICorner.Parent = Submit
 UICorner_2.Parent = Main
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 255))}
 UIGradient.Parent = Main
-NameHub.Name = "NameHub"
+NameHub.Name = "Skid Heb"
 NameHub.Parent = Main
 NameHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 NameHub.BackgroundTransparency = 1.000
@@ -53,10 +53,10 @@ NameHub.BorderSizePixel = 0
 NameHub.Position = UDim2.new(0.147410363, 0, 0.124324329, 0)
 NameHub.Size = UDim2.new(0, 354, 0, 36)
 NameHub.Font = Enum.Font.GothamBold
-NameHub.Text = "Skid Hub "
+NameHub.Text = "Alchemy XY"
 NameHub.TextColor3 = Color3.fromRGB(255, 255, 255)
 NameHub.TextSize = 30.000
-KeyBox.Name = "Type Key Here Baby
+KeyBox.Name = "Key Box"
 KeyBox.Parent = Main
 KeyBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 KeyBox.BackgroundTransparency = 0.500
@@ -67,7 +67,7 @@ KeyBox.Size = UDim2.new(0, 395, 0, 35)
 KeyBox.ClearTextOnFocus = false
 KeyBox.Font = Enum.Font.Gotham
 KeyBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-KeyBox.PlaceholderText = "Key here"
+KeyBox.PlaceholderText = "Paste key here..."
 KeyBox.Text = ""
 KeyBox.TextColor3 = Color3.fromRGB(27, 27, 27)
 KeyBox.TextSize = 20.000
@@ -75,7 +75,7 @@ UICorner_3.CornerRadius = UDim.new(0, 10)
 UICorner_3.Parent = KeyBox
 UICorner_4.Parent = Shadow
 -- Check Key
-local correct_key = "abc_0123456" -- Correct Key
+local correct_key = "Skid_ABC" -- Correct Key
 local key_input = KeyBox.Text
 Submit.MouseButton1Click:Connect(function()
     if key_input == correct_key then
@@ -83,9 +83,4 @@ Submit.MouseButton1Click:Connect(function()
     else
         print("Incorrect Key") -- If input isn't equal correct key will print Incorrect Key
     end
-end)
-spawn(function()
-    loadstring(game:HttpGet(
-        "https://raw.githubusercontent.com/L0v31/skidcomuti/main/change.lua"
-    ))()
 end)
