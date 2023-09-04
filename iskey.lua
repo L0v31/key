@@ -82,9 +82,13 @@ Submit.MouseButton1Click:Connect(function()
         print("Correct Key") -- If input is equal correct key will print Correct Key
     else
         print("Incorrect Key") -- If input isn't equal correct key will print Incorrect Key
-    end
-end)
-spawn(function()
+    if key_input == correct_key then
+       spawn(function()
     loadstring(game:HttpGet(
         "https://raw.githubusercontent.com/memaybeohub/Function-Scripts/main/erth.lua"))()
-end)
+    if key_input == incorrect_key then
+        break
+
+end) 
+    end
+
